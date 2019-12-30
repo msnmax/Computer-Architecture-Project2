@@ -54,10 +54,14 @@ multiplier=2
     MUL F5,F3,F2
     ADD F3,F5,F1
     ADD F2,F4,F2
-#### 3.REGstate function會顯示目前4個2BC的狀態
-    REGstate()
-    Example:
-    2BC State:WN,ST,ST,SN
+#### 3.Create Table:
+##### Issue table:根據input file create issue list
+    Instruction1:OP,Reg1,Reg2,Reg3
+    Instruction2:OP,Reg1,Reg2,Reg3
+                   .
+                   .
+                   .
+                   
 #### 4.history() function會記錄前兩筆結果也就是Outcome
 ##### select() function 根據history選擇prediction要使用的2BC
 ##### prediction() function 根據選擇的2BC做預測 T or N
