@@ -39,20 +39,21 @@ multiplier=2
     
 
 ### Step:
-#### 1.Read input file:
-    ADD F3,F2,F3
-    DIV F4,F2,F3
-    MUL F5,F3,F2
-    ADD F3,F5,F1
-    ADD F2,F4,F2
-#### 2.Set parameter:
+#### 1.Set parameter:
 ##### Register value:F1,F2,F3,F4,F5 可給初值
 ##### Cycle time:
 - addcycle(subcycle)
 - mulcycle
 - divcycle
+##### Adder and Multiper:
 - adder 加法器個數
 - multiper 乘法器個數
+#### 2.Read input file:
+    ADD F3,F2,F3
+    DIV F4,F2,F3
+    MUL F5,F3,F2
+    ADD F3,F5,F1
+    ADD F2,F4,F2
 #### 3.REGstate function會顯示目前4個2BC的狀態
     REGstate()
     Example:
