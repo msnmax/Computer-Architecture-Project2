@@ -8,6 +8,7 @@
 ### Parameter:
 Initial state:
 ```py    
+Register={'F1':1,'F2':1,'F3':2,'F4':None,'F5':None}
 addcycle=2 #set cycle
 mulcycle=10
 divcycle=20
@@ -38,8 +39,20 @@ multiplier=2
     
 
 ### Step:
-#### 1.Read input file:T,N,T,N,T,N,T,N
-#### 2.Set parameter: initial state
+#### 1.Read input file:
+    ADD F3,F2,F3
+    DIV F4,F2,F3
+    MUL F5,F3,F2
+    ADD F3,F5,F1
+    ADD F2,F4,F2
+#### 2.Set parameter:
+##### Register value:F1,F2,F3,F4,F5 可給初值
+##### Cycle time:
+- addcycle(subcycle)
+- mulcycle
+- divcycle
+- adder 加法器個數
+- multiper 乘法器個數
 #### 3.REGstate function會顯示目前4個2BC的狀態
     REGstate()
     Example:
