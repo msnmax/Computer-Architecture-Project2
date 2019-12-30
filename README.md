@@ -66,16 +66,11 @@ multiplier=2
     Register={'F1':1,'F2':1,'F3':2,'F4':None,'F5':None}
     RAT={'F1':None,'F2':None,'F3':None,'F4':None,'F5':None}
 ##### RS table:創建二維陣列根據加法器和乘法器個數創建
- RS table     | OP     | REG1     
- -------- | :-----------:  | :-----------: 
- RS1    | 第一列     | 第二列   
-  -------- | :-----------:  | :-----------: 
+ RS table     | OP     | REG1    |REG2 |Issue Time 
+ RS1    |      | |||
  RS2    | 第一列     | 第二列   
-  -------- | :-----------:  | :-----------: 
  RS3    | 第一列     | 第二列   
-  -------- | :-----------:  | :-----------: 
  RS4    | 第一列     | 第二列   
-  -------- | :-----------:  | :-----------: 
  RS5    | 第一列     | 第二列   
     RS=[[None for i in range(5)] for j in range(multiplier+adder)]
 #### 4.history() function會記錄前兩筆結果也就是Outcome
