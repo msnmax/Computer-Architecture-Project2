@@ -66,13 +66,9 @@ multiplier=2
     Register={'F1':1,'F2':1,'F3':2,'F4':None,'F5':None}
     RAT={'F1':None,'F2':None,'F3':None,'F4':None,'F5':None}
 ##### RS table:創建二維陣列根據加法器和乘法器個數創建
-$$
-\begin{bmatrix}
-1 & 2 & 3 \\
-1 & 2 & 3 \\
-1 & 2 & 3 
-\end{bmatrix} \tag{4}
-$$
+ 表格      | 第一列     | 第二列     
+ -------- | :-----------:  | :-----------: 
+ 第一行     | 第一列     | 第二列   
     RS=[[None for i in range(5)] for j in range(multiplier+adder)]
 #### 4.history() function會記錄前兩筆結果也就是Outcome
 ##### select() function 根據history選擇prediction要使用的2BC
