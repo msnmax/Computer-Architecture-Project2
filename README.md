@@ -67,6 +67,7 @@ multiplier=2
     RAT={'F1':None,'F2':None,'F3':None,'F4':None,'F5':None}
 ##### RS table:創建二維陣列根據加法器和乘法器個數創建
  RS table     | OP  | REG1 |REG2 |Issue Time 
+ | ---------- | :-----------:  | :-----------: | :-----------:  | :-----------: |
  RS1    |     |     |      |     |
  RS2    |     |     |      |     | 
  RS3    |     |     |      |     |  
