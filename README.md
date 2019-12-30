@@ -55,7 +55,7 @@ multiplier=2
     ADD F3,F5,F1
     ADD F2,F4,F2
 #### 3.Create Table:
-##### Issue table:根據input file create issue list
+##### Issue table: 根據input file create issue list
     Instruction1:[OP,Reg1,Reg2,Reg3]
     Instruction2:[OP,Reg1,Reg2,Reg3]
     Instruction3:[OP,Reg1,Reg2,Reg3]
@@ -65,7 +65,8 @@ multiplier=2
 ##### Register Table and RAT Table:使用python dict()function創建
     Register={'F1':1,'F2':1,'F3':2,'F4':None,'F5':None}
     RAT={'F1':None,'F2':None,'F3':None,'F4':None,'F5':None}
-##### RS table:創建二維陣列根據加法器和乘法器個數創建
+##### RS table: 創建二維陣列根據加法器和乘法器個數創建,最後的issue time是之後執行可使用到
+    RS=[[None for i in range(5)] for j in range(multiplier+adder)]
  RS table     | OP  | REG1 |REG2 |Issue Time 
  | ---------- | :-----------:  | :-----------: | :-----------:  | :-----------: |
  RS1    |     |     |      |     |
@@ -73,7 +74,7 @@ multiplier=2
  RS3    |     |     |      |     |  
  RS4    |     |     |      |     |   
  RS5    |     |     |      |     |  
-    RS=[[None for i in range(5)] for j in range(multiplier+adder)]
+
 #### 4.history() function會記錄前兩筆結果也就是Outcome
 ##### select() function 根據history選擇prediction要使用的2BC
 ##### prediction() function 根據選擇的2BC做預測 T or N
